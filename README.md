@@ -2,8 +2,7 @@
 
 > **Submission for Junior AI Engineer – Applied AI Technical Assessment**  
 > **Candidate:** Amir Ansary (`ansaryamir7@gmail.com`)  
-> **Company:** DarGlobal PLC  
-> **Submission Deadline:** Friday, 20 November 2026  
+> **Company:** DarGlobal PLC   
 > **Live Deployed URL:** [https://estateintel-ai.onrender.com](https://estateintel-ai.onrender.com)  
 > **GitHub Repository:** [https://github.com/mramir3/estateintel-ai](https://github.com/mramir3/estateintel-ai)
 
