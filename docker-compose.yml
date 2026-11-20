@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  estateintel:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: estateintel-ai
+    ports:
+      - "8000:8000"   # FastAPI Backend & OpenAPI Documentation
+      - "8501:8501"   # Streamlit Frontend Chat Interface
+    environment:
+      - OPENROUTER_API_KEY=${OPENROUTER_API_KEY:-}
+      - OPENROUTER_MODEL=${OPENROUTER_MODEL:-openrouter/free}
+      - ENVIRONMENT=production
+      - BACKEND_HOST=0.0.0.0
+      - BACKEND_PORT=8000
+      - PORT=8501
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s

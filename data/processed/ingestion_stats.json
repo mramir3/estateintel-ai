@@ -1,0 +1,11 @@
+{
+  "pages_attempted": 27,
+  "pages_succeeded": 39,
+  "pages_blocked": 3,
+  "records_darglobal": 16,
+  "records_wasalt": 23,
+  "total_documents_indexed": 37,
+  "duplicates_detected": 2,
+  "last_ingestion_time": "2026-11-19T20:07:44.995420+00:00",
+  "vector_store_status": "Ready"
+}
