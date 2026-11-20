@@ -4,13 +4,38 @@
 > **Candidate:** Amir Ansary (`ansaryamir7@gmail.com`)  
 > **Company:** DarGlobal PLC  
 > **Submission Deadline:** Friday, 20 November 2026  
+> **Live Deployed URL:** [https://estateintel-ai.onrender.com](https://estateintel-ai.onrender.com)  
+> **GitHub Repository:** [https://github.com/mramir3/estateintel-ai](https://github.com/mramir3/estateintel-ai)
 
-[![Python](https://img.shields.io/badge/Python-3.11-blue.svg)](https://www.python.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.110+-green.svg)](https://fastapi.tiangolo.com/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.32+-red.svg)](https://streamlit.io/)
-[![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED.svg)](https://www.docker.com/)
-[![OpenRouter](https://img.shields.io/badge/OpenRouter-Free%20Tier-purple.svg)](https://openrouter.ai/)
-[![Tests](https://img.shields.io/badge/Tests-38%2F38%20Passing-brightgreen.svg)](TEST_REPORT.md)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-estateintel--ai.onrender.com-success?style=for-the-badge&logo=render)](https://estateintel-ai.onrender.com)
+[![GitHub](https://img.shields.io/badge/GitHub-mramir3%2Festateintel--ai-181717?style=for-the-badge&logo=github)](https://github.com/mramir3/estateintel-ai)
+[![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/)
+[![Tests](https://img.shields.io/badge/Tests-38%2F38%20Passing-brightgreen?style=for-the-badge)](TEST_REPORT.md)
+
+---
+
+## 🌟 Quick Links for Recruiters & Evaluators
+
+| Resource | Direct Link | Purpose |
+| :--- | :--- | :--- |
+| **Live Interactive Chatbot** | 🔗 [https://estateintel-ai.onrender.com](https://estateintel-ai.onrender.com) | Direct web interface to test natural language queries |
+| **FastAPI Swagger Docs** | 📖 [https://estateintel-ai.onrender.com/docs](https://estateintel-ai.onrender.com/docs) | Interactive API exploration and OpenAPI schemas |
+| **Healthcheck Endpoint** | 🩺 [https://estateintel-ai.onrender.com/health](https://estateintel-ai.onrender.com/health) | Live container health and vector index readiness |
+| **System Architecture** | 📐 [ARCHITECTURE.md](ARCHITECTURE.md) | High-level data flow, component diagrams, and RAG pipeline |
+| **Automated Test Report** | 🧪 [TEST_REPORT.md](TEST_REPORT.md) | 38/38 automated tests (unit, integration, security) |
+| **Official Submission Brief** | 📄 [SUBMISSION.md](SUBMISSION.md) | Formal candidate submission response |
+
+> ℹ️ **Note on Free-Tier Cloud Hosting:** The application is hosted on Render's free tier. If the instance has been idle, the first request may take ~30–60 seconds to spin up from sleep mode, after which it responds with normal low latency.
+
+---
+
+### 💡 Suggested Queries to Test on the Live App:
+* *"What luxury developments does DarGlobal offer in Dubai?"*
+* *"Compare W Residences Dubai Downtown with DaVinci Tower in terms of price, bedrooms, and amenities."*
+* *"Show me villas available in Riyadh on Wasalt under SAR 3,000,000."*
+* *"What branded amenities are included in Tierra Viva by Automobili Lamborghini?"*
+* *"ما هي الفلل المتاحة في الرياض؟"* (Arabic queries supported)
 
 ---
 
@@ -30,10 +55,10 @@ The system integrates verified zero-cost free models on the **OpenRouter API** (
 | :-: | :--- | :-: |
 | **1** | **Scrape publicly available data from DarGlobal & Wasalt** | ✅ **VERIFIED** — 37 verified properties collected, cleaned, and normalized. |
 | **2** | **Build an AI chatbot using collected data** | ✅ **VERIFIED** — Grounded RAG with 384-dim dense embeddings and hybrid metadata filtering. |
-| **3** | **Use suitable free model on OpenRouter** | ✅ **VERIFIED** — Configured with `openrouter/free` and verified free fallback cascade. |
+| **3** | **Use suitable free model on OpenRouter** | ✅ **VERIFIED** — Configured with `openrouter/free` and automated free fallback cascade. |
 | **4** | **Containerise the application using Docker** | ✅ **VERIFIED** — Multi-stage `Dockerfile`, non-root user, `docker-compose.yml`. |
-| **5** | **Deploy the solution rather than source code only** | ✅ **VERIFIED** — Cloud-ready single-container deployment (Render / Railway / HF). |
-| **6** | **Provide working URL for direct testing** | ✅ **VERIFIED** — Interactive Streamlit Chat UI + FastAPI Swagger (`/docs`). |
+| **5** | **Deploy the solution rather than source code only** | ✅ **VERIFIED** — Cloud-deployed on Render at [https://estateintel-ai.onrender.com](https://estateintel-ai.onrender.com). |
+| **6** | **Provide working URL for direct testing** | ✅ **VERIFIED** — Live working UI at [https://estateintel-ai.onrender.com](https://estateintel-ai.onrender.com). |
 
 ---
 
@@ -194,7 +219,7 @@ python scripts/ingest.py 30
 
 ### 1. Clone & Set Up Environment
 ```bash
-git clone https://github.com/your-username/estateintel-ai.git
+git clone https://github.com/mramir3/estateintel-ai.git
 cd estateintel-ai
 
 python -m venv .venv
