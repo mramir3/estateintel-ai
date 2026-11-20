@@ -17,7 +17,10 @@ class OpenRouterService:
             raw_key = raw_key.split("OPENROUTER_API_KEY=", 1)[1].strip()
         elif "key=" in raw_key:
             raw_key = raw_key.split("key=", 1)[1].strip()
-        self.api_key = raw_key.strip("\"' \t\r\n")
+        cleaned = raw_key.strip("\"' \t\r\n")
+        if "sk-" in cleaned:
+            cleaned = "sk-" + cleaned.split("sk-", 1)[1]
+        self.api_key = cleaned.strip("\"' \t\r\n")
         self.primary_model = (model or settings.OPENROUTER_MODEL or "openrouter/free").strip("\"' ")
         self.fallback_models = settings.FALLBACK_MODELS
         self.base_url = settings.OPENROUTER_BASE_URL
