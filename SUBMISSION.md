@@ -15,10 +15,10 @@
 | :--- | :--- | :--- |
 | **Full Name** | Amir Ansary | Verified |
 | **Email** | ansaryamir7@gmail.com | Verified |
-| **Current Location** | *[Please confirm: City, Country]* | Pending Confirmation |
-| **Current Package** | *[Please confirm]* | Pending Confirmation |
-| **Expected Package** | *[Please confirm]* | Pending Confirmation |
-| **Notice Period** | *[Please confirm]* | Pending Confirmation |
+| **Current Location** | KOLKATA, INDIA 
+| **Current Package** | N/A
+| **Expected Package** | N/A
+| **Notice Period** | IMMEDIATE
 
 ---
 
