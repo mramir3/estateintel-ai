@@ -287,7 +287,7 @@ Interactive documentation is available at `/docs` (Swagger UI) and `/redoc`.
 
 
 
-## 13. License & Attribution
+## 12. License & Attribution
 
 Developed originally for the DarGlobal Junior AI Engineer – Applied AI technical evaluation.  
 All brand trademarks (DarGlobal, Wasalt, Aston Martin, Automobili Lamborghini, The Trump Organization, Pagani, Missoni, Mouawad) belong to their respective copyright holders.
