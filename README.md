@@ -285,41 +285,7 @@ Interactive documentation is available at `/docs` (Swagger UI) and `/redoc`.
 
 ---
 
-## 12. Recruitment Submission Email
 
-**To:** `careers@darglobal.co.uk`  
-**Subject:** `Junior AI Engineer – Applied AI | Technical Assignment Submission — Amir Ansary`
-
-```text
-Dear DarGlobal Recruitment Team,
-
-I am pleased to submit my completed technical assignment for the Junior AI Engineer – Applied AI role at DarGlobal.
-
-Below is the requested information to support the next stage of recruitment:
-• Candidate Name: Amir Ansary
-• Current Location: [CONFIRM CITY, COUNTRY]
-• Current Package: [CONFIRM]
-• Expected Package: [CONFIRM]
-• Notice Period: [CONFIRM]
-
-PROJECT SUMMARY: EstateIntel AI
-• Live Chatbot URL: [CONFIRM WORKING URL / e.g. https://estateintel-ai.onrender.com]
-• GitHub Repository: [CONFIRM GITHUB URL / e.g. https://github.com/amiransary/estateintel-ai]
-• Docker Support: Multi-stage Dockerfile and docker-compose.yml with non-root security execution.
-• Data Pipeline: Public data collected from DarGlobal (London Stock Exchange LSE: DAR disclosures) and Wasalt (verified product sitemap & Next.js state).
-• AI & RAG Engine: Grounded RAG with 384-dimensional dense embeddings and OpenRouter free-tier LLM integration (openrouter/free).
-• Automated Tests: 38/38 automated tests passing (100% pass rate) across scraping, retrieval, security, API endpoints, and 15 conversational scenarios.
-
-All code, system architecture diagrams (ARCHITECTURE.md), deployment documentation (DEPLOYMENT.md), and test reports (TEST_REPORT.md) are included in the repository.
-
-Thank you for your consideration, and I look forward to discussing my submission with the engineering team.
-
-Best regards,
-Amir Ansary
-ansaryamir7@gmail.com
-```
-
----
 
 ## 13. License & Attribution
 
