@@ -12,8 +12,13 @@ class OpenRouterService:
     """Enterprise client for OpenRouter free models with resilient fallback."""
 
     def __init__(self, api_key: Optional[str] = None, model: Optional[str] = None):
-        self.api_key = api_key or settings.OPENROUTER_API_KEY
-        self.primary_model = model or settings.OPENROUTER_MODEL
+        raw_key = (api_key or settings.OPENROUTER_API_KEY or "").strip()
+        if "OPENROUTER_API_KEY=" in raw_key:
+            raw_key = raw_key.split("OPENROUTER_API_KEY=", 1)[1].strip()
+        elif "key=" in raw_key:
+            raw_key = raw_key.split("key=", 1)[1].strip()
+        self.api_key = raw_key.strip("\"' \t\r\n")
+        self.primary_model = (model or settings.OPENROUTER_MODEL or "openrouter/free").strip("\"' ")
         self.fallback_models = settings.FALLBACK_MODELS
         self.base_url = settings.OPENROUTER_BASE_URL
         self.timeout = settings.REQUEST_TIMEOUT
@@ -68,7 +73,7 @@ class OpenRouterService:
         headers = {
             "Authorization": f"Bearer {self.api_key}",
             "Content-Type": "application/json",
-            "HTTP-Referer": "https://github.com/estateintel-ai",
+            "HTTP-Referer": "https://estateintel-ai.onrender.com",
             "X-Title": "EstateIntel AI Assistant",
             "User-Agent": "EstateIntel/1.0",
         }
